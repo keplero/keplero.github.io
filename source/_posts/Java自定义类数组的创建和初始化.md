@@ -7,7 +7,7 @@ categories: 技术
 
 &emsp;&emsp;刚刚在慕课学习Java的集合类List过程中，向集合中添加元素时，遇到一个问题：
 
- - 定义了一个Course类;
+ - 定义了一个Course类1;
  
 
 ```Java
