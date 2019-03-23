@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="java,">
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="keplery&#39;s blog">
-<meta property="og:url" content="https://keplero.github.io/index.html">
+<meta name="description" content="&amp;emsp;&amp;emsp;刚刚在慕课学习Java的集合类List过程中，向集合中添加元素时，遇到一个问题：  定义了一个Course类;  123456789101112131415161718public class Course &amp;#123;	private String id;    	private String name;  //课程名称		//get  set方法	public Stri">
+<meta name="keywords" content="java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java自定义类数组的创建和初始化">
+<meta property="og:url" content="https://keplero.github.io/2019/03/23/Java自定义类数组的创建和初始化/index.html">
 <meta property="og:site_name" content="keplery&#39;s blog">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;刚刚在慕课学习Java的集合类List过程中，向集合中添加元素时，遇到一个问题：  定义了一个Course类;  123456789101112131415161718public class Course &amp;#123;	private String id;    	private String name;  //课程名称		//get  set方法	public Stri">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-03-23T07:43:25.909Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="keplery&#39;s blog">
+<meta name="twitter:title" content="Java自定义类数组的创建和初始化">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;刚刚在慕课学习Java的集合类List过程中，向集合中添加元素时，遇到一个问题：  定义了一个Course类;  123456789101112131415161718public class Course &amp;#123;	private String id;    	private String name;  //课程名称		//get  set方法	public Stri">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://keplero.github.io/">
+  <link rel="canonical" href="https://keplero.github.io/2019/03/23/Java自定义类数组的创建和初始化/">
 
 
 
 
 
-  <title>keplery's blog</title>
+  <title>Java自定义类数组的创建和初始化 | keplery's blog</title>
   
 
 
@@ -140,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -224,9 +228,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -256,9 +260,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/03/23/Java自定义类数组的创建和初始化/" itemprop="url">Java自定义类数组的创建和初始化</a></h1>
+          <h1 class="post-title" itemprop="name headline">Java自定义类数组的创建和初始化</h1>
         
 
         <div class="post-meta">
@@ -330,9 +332,7 @@
       
 
       
-        
-          
-            <p>&emsp;&emsp;刚刚在慕课学习Java的集合类List过程中，向集合中添加元素时，遇到一个问题：</p>
+        <p>&emsp;&emsp;刚刚在慕课学习Java的集合类List过程中，向集合中添加元素时，遇到一个问题：</p>
 <ul>
 <li>定义了一个Course类;</li>
 </ul>
@@ -355,8 +355,6 @@
 <p>&emsp;&emsp;此处顺便再补充一下类二维数组的定义及初始化，</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*Java提供类*/</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//方式一:</span></span><br><span class="line">        String[][] s = <span class="keyword">new</span> String[][] &#123; &#123;<span class="string">"a"</span>, <span class="string">"b"</span>, <span class="string">"c"</span>&#125;,</span><br><span class="line">                                        &#123;<span class="string">"d"</span>, <span class="string">"e"</span>, <span class="string">"f"</span>&#125;  &#125;;</span><br><span class="line">		</span><br><span class="line">        <span class="comment">//方式二</span></span><br><span class="line">        <span class="keyword">int</span> r = <span class="number">0</span>;</span><br><span class="line">		String[][] s = <span class="keyword">new</span> String[<span class="number">2</span>][<span class="number">3</span>];</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">2</span>; i++) </span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">3</span>; j++) &#123;</span><br><span class="line">				s[i][j] = String.valueOf(r++);</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*自定义类*/</span></span><br><span class="line">		Course[][] courses = <span class="keyword">new</span> Course[<span class="number">2</span>][<span class="number">3</span>];  <span class="comment">//声明</span></span><br><span class="line">		courses[<span class="number">0</span>][<span class="number">0</span>] = <span class="keyword">new</span> Course();  <span class="comment">//使用时new一个实例</span></span><br><span class="line">		courses[<span class="number">0</span>][<span class="number">0</span>].setId(<span class="string">"0"</span>);</span><br><span class="line">		courses[<span class="number">0</span>][<span class="number">0</span>].setName(<span class="string">"000000"</span>);</span><br><span class="line">		</span><br><span class="line">        System.out.println(courses[<span class="number">0</span>][<span class="number">0</span>].getId() + <span class="string">"  "</span> </span><br><span class="line">                           + courses[<span class="number">0</span>][<span class="number">0</span>].getName());</span><br><span class="line">        <span class="comment">//测试 不报空指针异常</span></span><br></pre></td></tr></table></figure>
 
-          
-        
       
     </div>
     
@@ -371,134 +369,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://keplero.github.io/2019/03/13/起始/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="keplery">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="keplery's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/03/13/起始/" itemprop="url">起始</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-13T18:32:32+08:00">
-                2019-03-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/java/" rel="tag"># java</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Constant dropping wears the stone.</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/03/13/起始/" rel="next" title="起始">
+                <i class="fa fa-chevron-left"></i> 起始
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
   </div>
@@ -508,10 +408,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -519,6 +420,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -740,6 +645,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
